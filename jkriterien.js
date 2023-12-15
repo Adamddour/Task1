@@ -24,7 +24,7 @@ function eingabeUeberpruefen() {
     }
     else if(eingabewert.length===0){
 
-        ausgabe1.innerHTML='Feld ist leer. Bitte eine Kriterien eingeben';
+        ausgabe1.innerHTML='Feld ist leer. Bitte Kriterien eingeben';
     }
     else{
         ausgabe1.innerHTML='Für Ihre Eingabe haben wir folgends Kriterien:';
@@ -115,7 +115,7 @@ function eingabeUeberpruefen() {
             }break;
 
             default:{
-                ausgabe2.innerHTML='FalscheEingabe';
+                ausgabe2.innerHTML='Falsche Eingabe für 1.Zeichen Fehler-/ Arbeitsort';
             }
         }
         //Ende 1.Zeichen Fehler-/ Arbeitsort
@@ -188,7 +188,7 @@ function eingabeUeberpruefen() {
             }break;
 
             default:{
-                ausgabe3.innerHTML='FalscheEingabe';
+                ausgabe3.innerHTML='Falsche Eingabe 2.Zeichen Fehler-/ Tätigkeit';
             }
 
         }
@@ -275,7 +275,7 @@ function eingabeUeberpruefen() {
             }break;
 
             default:{
-                ausgabe4.innerHTML='FalscheEingabe';
+                ausgabe4.innerHTML='Falsche Eingabe für 3.Zeichen Qualifizierung/ weitere Bearbeitung';
             }
 
         }
