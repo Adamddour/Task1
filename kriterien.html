@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <script src="jkriterien.js"></script>
 </head>
 <body>
@@ -12,7 +13,7 @@
 
     <input type="text" id="eingabe" name="eingabe" placeholder="">
 
-    <div class="bg-blue-500 p-4 rounded">
+    <div class="left-px bg-blue-500 rounded-lg shadow-xl w-20 grid grid-cols-1 gap-4">
         <button onclick="eingabeUeberpruefen()">Ueberpruefen</button>
     </div>
     
@@ -21,6 +22,8 @@
     <p id="ausgabe3"></p>
     <p id="ausgabe4"></p>
     <p id="ausgabe5"></p>
+
+
     
 </body>
 </html>
