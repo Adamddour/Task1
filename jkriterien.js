@@ -4,6 +4,7 @@ function eingabeUeberpruefen() {
     var eingabe = document.getElementById('eingabe');
     var eingabewert = eingabe.value;
 
+
     //In HTML Seite in einen p-Element ausgeben lassen 
     var ausgabe1=document.getElementById('ausgabe1');
     var ausgabe2=document.getElementById('ausgabe2');
@@ -18,18 +19,19 @@ function eingabeUeberpruefen() {
     var fehlerCode;
 
     
-    if (eingabewert.length>6) {
+    if (eingabewert.length>10 || eingabewert[0] !== '[' || eingabewert[4] !== ']' || eingabewert[5] !== ';' || eingabewert[6] !== ' ') {
         
-        ausgabe1.innerHTML='Die Laenge muss kleine als 6 Zeichnen sein für Ihre eingabe haben keine Kriterien';
+        ausgabe1.innerHTML='Ungültige Eingabe. Bitte folgendes Format verwenden: [ABC]; §12';
     }
     else if(eingabewert.length===0){
 
         ausgabe1.innerHTML='Feld ist leer. Bitte Kriterien eingeben';
     }
     else{
+
         ausgabe1.innerHTML='Für Ihre Eingabe haben wir folgends Kriterien:';
 
-        for(var i=0;i<eingabewert.length-3;i++){
+        for(var i=0;i<eingabewert.length;i++){
 
             //Die erste 3 Elemente in charArray mit der Methode push() hinzufügen
             charArray.push(eingabewert[i]);
@@ -37,12 +39,15 @@ function eingabeUeberpruefen() {
         //Ausgabe für die erste 3 Elemente in charArray
         //ausgabe1.innerHTML='Die Eingabe: '+charArray;
 
+        //Die Eingabewert überprüfen
+       
+
         //Letzte 3 Element (Zeichen FehlerCode)
         fehlerCode=eingabewert.slice(-3);
-        //ausgabe5.innerHTML='FehlerCode lautet: '+fehlerCode;
+        ausgabe5.innerHTML='FehlerCode lautet: '+fehlerCode;
 
         //Anfang //Ende 1.Zeichen Fehler-/ Arbeitsort und dafür ist Variable ausgabe2 geeignt
-        switch(charArray[0]){
+        switch(charArray[1]){
 
             case 'A':{
 
@@ -121,7 +126,7 @@ function eingabeUeberpruefen() {
         //Ende 1.Zeichen Fehler-/ Arbeitsort
 
         //Anfang 2.Zeichen Fehler-/ Tätigkeit und dafür ist Variable ausgabe3 geeignt
-        switch(charArray[1]){
+        switch(charArray[2]){
 
             case 'A':{
                 ausgabe3.innerHTML='Unterberechung';
@@ -196,7 +201,7 @@ function eingabeUeberpruefen() {
 
 
         //Anfang 3.Zeichen Qualifizierung/ weitere Bearbeitung und dafür ist Variable ausgabe4 geeignt
-        switch(charArray[2]){
+        switch(charArray[3]){
 
             case 'B':{
                 ausgabe4.innerHTML='Kunde informiert, Techniker nicht vor Ort(Messung ok)';
@@ -388,5 +393,6 @@ function eingabeUeberpruefen() {
 }
 
 
-var eingabeInput = document.getElementById('eingabe');
-eingabeInput.addEventListener('click', eingabeUeberpruefen);
+/*var eingabeInput = document.getElementById('eingabe');
+eingabeInput.addEventListener('DOMContentLoaded', eingabeUeberpruefen);
+eingabeUeberpruefen();*/

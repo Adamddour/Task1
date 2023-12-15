@@ -11,11 +11,9 @@
   
     <label for="Kriterien">Kriterien eingeben:</label>
 
-    <input type="text" id="eingabe" name="eingabe" placeholder="">
+    <input type="text" id="eingabe" oninput="eingabeUeberpruefen()" name="eingabe" placeholder="">
 
-    <div class="left-px bg-blue-500 rounded-lg shadow-xl w-20 grid grid-cols-1 gap-4">
-        <button onclick="eingabeUeberpruefen()">Prüfen</button>
-    </div>
+    
     
     <p id="ausgabe1"></p>
 
