@@ -289,95 +289,95 @@ function eingabeUeberpruefen() {
         //Beginn 4.Zeichen FehlerCode
         switch(fehlerCode){
 
-            case "$01":{
+            case "§01":{
                 ausgabe5.innerHTML='kein Fehler feststellbar/Fehler beim Eingrenzen verschwunden';
             }break;
 
-            case "$02":{
+            case "§02":{
                 ausgabe5.innerHTML='Fehler im Zuständigkeitsbereich des Endkunden';
             }break;
 
-            case "$03":{
+            case "§03":{
                 ausgabe5.innerHTML='Endkunde verweigert Ausführung';
             }break;
 
-            case "$04":{
+            case "§04":{
                 ausgabe5.innerHTML='Endkunde nicht angetroffen';
             }break;
 
-            case "$05":{
+            case "§05":{
                 ausgabe5.innerHTML='kein Zugang zum Kollokationsraum';
             }break;
 
-            case "$06":{
+            case "§06":{
                 ausgabe5.innerHTML='kein Fehler feststellbar / Kunde meldet gut';
             }break;
 
-            case "$11":{
+            case "§11":{
                 ausgabe5.innerHTML='keine Stromversorgung/Hardware nicht angeschlossen';
             }break;
 
-            case "$12":{
+            case "§12":{
                 ausgabe5.innerHTML='Verkabelungsfehler= TAE -> IAD';
             }break;
 
-            case "$13":{
+            case "§13":{
                 ausgabe5.innerHTML='Verkabelungsfehler= TAE -> Starterbox, NTsplit, Splitter, NTBA';
             }break;
 
-            case "$14":{
+            case "§14":{
                 ausgabe5.innerHTML='Verkabelungsfehler= Starterbox, NTsplit, Splitter, NTBA -> Modem (WLAN-) Router';
             }break;
 
-            case "$15":{
+            case "§15":{
                 ausgabe5.innerHTML='ungeeignete Endleitung';
             }break;
 
-            case "$16":{
+            case "§16":{
                 ausgabe5.innerHTML='Fehler in der Konfiguration der Hardware';
             }break;
 
-            case "$17":{
+            case "§17":{
                 ausgabe5.innerHTML='Parallelschaltung';
             }break;
 
-            case "$21":{
+            case "§21":{
                 ausgabe5.innerHTML='WLAN/Router defekt';
             }break;
 
-            case "$22":{
+            case "§22":{
                 ausgabe5.innerHTML='WLAN/Router';
             }break;
 
-            case "$23":{
+            case "§23":{
                 ausgabe5.innerHTML='Splitter defekt';
             }break;
 
-            case "$24":{
+            case "§24":{
                 ausgabe5.innerHTML='Ntsplit defekt';
             }break;
 
-            case "$25":{
+            case "§25":{
                 ausgabe5.innerHTML='Modem defekt';
             }break;
 
-            case "$26":{
+            case "§26":{
                 ausgabe5.innerHTML='IAD defekt';
             }break;
 
-            case "$27":{
+            case "§27":{
                 ausgabe5.innerHTML='Carrierbox defekt';
             }break;
 
-            case "$31":{
+            case "§31":{
                 ausgabe5.innerHTML='TAL Port defekt Portwechsel (mit enstprechendem Angaben zur Technik/Problem im ÜVT)';
             }break;
 
-            case "$32":{
+            case "§32":{
                 ausgabe5.innerHTML='Unterbrechung Verschaltung ÜVT (mit enstprechendem Angaben zur Technik/Problem im ÜVT)';
             }break;
 
-            case "$33":{
+            case "§33":{
                 ausgabe5.innerHTML='Schaltstreifen defekt (mit enstprechendem Angaben zur Technik/Problem im ÜVT)';
             }break;
 
