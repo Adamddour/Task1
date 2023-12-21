@@ -19,7 +19,7 @@ function eingabeUeberpruefen() {
     var fehlerCode;
 
     
-    if (eingabewert.length>10 || eingabewert[0] !== '[' || eingabewert[4] !== ']' || eingabewert[5] !== ';' || eingabewert[6] !== ' ') {
+    if (eingabewert[0] !== '[' || eingabewert[4] !== ']') {
         
         ausgabe1.innerHTML='Ungültige Eingabe. Bitte folgendes Format verwenden: [ABC]; §12';
     }
